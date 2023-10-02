@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 
-first tasks in the new sprint
+0x00. Python - Hello, World
