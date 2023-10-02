@@ -10,12 +10,12 @@ int check_cycle(listint_t *list)
 
 	prev  = list;
 	forward = list;
-	while (prev != NULL && forward != NULL && prev->next != NULL)
+	while (prev != NULL && forward != NULL)
 	{
 		prev = prev->next;
 		forward = forward->next->next;
 
-		if (prev == forward)
+		if (prev == forward && prev->next != NULL)
 		{
 			return (1);
 		}
