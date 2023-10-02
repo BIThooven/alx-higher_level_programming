@@ -15,7 +15,7 @@ int check_cycle(listint_t *list)
 		prev = prev->next;
 		forward = forward->next->next;
 
-		if (prev == forward && prev->next != NULL)
+		if (prev == forward)
 		{
 			return (1);
 		}
