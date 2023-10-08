@@ -1,5 +1,10 @@
 #include "lists.h"
 #include <stddef.h>
+/**
+ * is_palindrome - a functions that checks if a linked list is palindrome
+ * @head: a pointer to the next node
+ * Return: returns 0 if false, 1 if true
+*/
 int is_palindrome(listint_t **head)
 {
     listint_t *current = *head;
