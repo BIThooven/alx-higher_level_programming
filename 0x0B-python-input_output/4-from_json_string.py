@@ -5,7 +5,7 @@ import json
 
 def from_json_string(my_str):
     """a function to retrieve data from a json file
-    
+
     Args:
         my_str: a json string
     Return:
