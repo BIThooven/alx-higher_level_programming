@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const array = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-let count = 0;
-for (count in array) {
-  console.log(array[count++]);
+let count;
+for (count = 0; count < array.length; count++) {
+  console.log(array[count]);
 }
