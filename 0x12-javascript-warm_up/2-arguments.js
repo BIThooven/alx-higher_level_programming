@@ -1,6 +1,3 @@
 #!/usr/bin/node
-
-// chacks the number of arguments
-const keyarg = process.argv.length;
-
-console.log(keyarg === 2 ? 'No argument' : keyarg === 3 ? 'Argument found' : 'Argument found');
+const count = process.argv.length;
+console.log(count === 2 ? 'No argument' : count === 3 ? 'Argument found' : 'Arguments found');
