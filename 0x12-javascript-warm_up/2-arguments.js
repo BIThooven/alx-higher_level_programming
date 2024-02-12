@@ -1,5 +1,6 @@
 #!/usr/bin/node
 
+// chacks the number of arguments
 const keyarg = process.argv.length - 2;
 
 if (keyarg === 0) {
