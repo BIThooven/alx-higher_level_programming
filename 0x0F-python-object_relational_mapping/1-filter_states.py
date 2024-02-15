@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import MySQLdb
 import sys
+"""filters states by states.id and starts with N"""
 
 if __name__ == "__main__":
     username = sys.argv[1]
