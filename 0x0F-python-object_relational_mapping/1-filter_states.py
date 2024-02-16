@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+"""filters states by states.id and starts with N"""
+
 import MySQLdb
 import sys
-"""filters states by states.id and starts with N"""
 
 if __name__ == "__main__":
     username = sys.argv[1]
@@ -13,7 +14,6 @@ if __name__ == "__main__":
     curr = db.cursor()
     curr.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
     rows = curr.fetchall()
-    for row in rows:
-        print(row)
+    [print(row) for row in rows]
     curr.close()
     db.close()
