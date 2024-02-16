@@ -13,7 +13,6 @@ if __name__ == "__main__":
                          user=username, passwd=password, db=database)
     curr = db.cursor()
     curr.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
-    rows = curr.fetchall()
-    [print(row) for row in rows]
+    [print(row) for row in curr.fetchall()]
     curr.close()
     db.close()
