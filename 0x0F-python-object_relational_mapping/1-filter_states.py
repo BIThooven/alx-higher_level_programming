@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""filters states by states.id and starts with N from the database hbtn_0e_0_usa"""
+"""filters states by states.id and starts with N in hbtn_0e_0_usa"""
 
+from email import charset
 import MySQLdb
 import sys
 
