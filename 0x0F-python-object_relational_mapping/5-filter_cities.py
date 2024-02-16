@@ -20,6 +20,6 @@ if __name__ == "__main__":
     part3 = " ORDER BY cities.id"
     curr.execute("{}{}{}".format(part1, part2, part3), (search,))
     rows = curr.fetchall()
-    [print(row[0], end=", " if row != rows[-1] else "\n") for row in rows]
+    print(", ".join([row[0] for row in rows]))
     curr.close()
     db.close()
