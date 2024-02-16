@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" 8-model_state_fetch_first.py """
 
 from model_state import Base, State
 from sqlalchemy import create_engine
