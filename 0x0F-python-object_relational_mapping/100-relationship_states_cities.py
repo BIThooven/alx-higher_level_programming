@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""script that creates the State “California” with the City “San Francisco"""
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
