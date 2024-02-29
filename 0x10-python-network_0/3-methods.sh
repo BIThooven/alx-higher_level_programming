@@ -1,3 +1,3 @@
 #!/bin/bash
-# Write a Bash script takes in a URL and displays all HTTP method
+#sending a request to the URL and display methods
 sudo curl -I -s $1 | grep "Allow" | cut -d ' ' -f2-
